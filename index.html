@@ -5,22 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juned Khan</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <title>Dice Game</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="top-container">
-        <img class="top-cloud" src="images/cloud.png" alt="">
-        <h1>I'm Juned</h1>
-        <p>a web developer.</p>
-        <img class="bottom-cloud" src="images/cloud.png" alt="">
-        <img src="images/mountain.png" alt="">
-
+    <div class="the_game">
+        <h1>Dice Game</h1>
+        <div class="parent_dice_container">
+            <div class="dice_1_box">
+                <h2>Player 1</h2>
+                <img id="dice_1_img" src="images/6.png" height="100px">
+                <p class="player_win_count">Win Count: <span id="p1_win_count">0</span></p>
+            </div>
+            <div class="dice_2_box">
+                <h2>Player 2</h2>
+                <img id="dice_2_img" src="images/6.png" height="100px">
+                <p class="player_win_count">Win Count: <span id="p2_win_count">0</span></p>
+            </div>
+        </div>
+        <div class="buttons_container">
+            <button onclick="playGame()">Play Game</button>
+            <button onclick="reset()">Reset</button>
+        </div>
     </div>
-    <div class="middle-container"></div>
-    <div class="bottom-container"></div>
+    <script src="index.js" type="text/javascript"></script>
 </body>
 
 </html>
